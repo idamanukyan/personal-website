@@ -879,7 +879,7 @@ footer p {
     margin: 0;
 }
 
-/* Responsive */
+/* Responsive - Tablet */
 @media (max-width: 768px) {
     :root {
         --spacing-2xl: 4rem;
@@ -955,6 +955,128 @@ footer p {
     .clients-list {
         flex-direction: column;
         gap: var(--spacing-xs);
+    }
+
+    .case-body {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    section {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    h2 {
+        margin-bottom: var(--spacing-lg);
+    }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 480px) {
+    :root {
+        --spacing-lg: 2rem;
+        --spacing-xl: 3rem;
+        --spacing-2xl: 3rem;
+        --spacing-3xl: 4rem;
+    }
+
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    .hero {
+        padding: 100px 0 60px;
+    }
+
+    .hero-name {
+        font-size: clamp(2rem, 12vw, 2.5rem);
+    }
+
+    .hero-title {
+        font-size: 1.125rem;
+    }
+
+    .hero-statement {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .hero-badge {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        padding: 14px 20px;
+        font-size: 0.875rem;
+    }
+
+    h1 {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+    }
+
+    h2 {
+        font-size: clamp(1.25rem, 5vw, 1.5rem);
+    }
+
+    h3 {
+        font-size: 1.125rem;
+    }
+
+    .about-lead {
+        font-size: 1.0625rem;
+    }
+
+    .detail-item {
+        padding: var(--spacing-sm);
+    }
+
+    .testimonial {
+        padding: var(--spacing-md);
+    }
+
+    .testimonial p {
+        font-size: 0.9375rem;
+    }
+
+    .exp-points li {
+        font-size: 0.875rem;
+        padding-left: var(--spacing-sm);
+    }
+
+    .case-tech {
+        gap: 6px;
+    }
+
+    .case-tech span {
+        font-size: 0.6875rem;
+        padding: 3px 8px;
+    }
+
+    .contact-email {
+        font-size: 1rem;
+        word-break: break-all;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px 14px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    .gradient-orb {
+        width: 400px;
+        height: 400px;
+        top: -150px;
+        right: -150px;
+    }
+
+    footer p {
+        font-size: 0.75rem;
     }
 }
 
